@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/statCalc.js"></script>
+    <script src="js/gui.js"></script>
+    <style>
+        .unit-selector { width : 150px; }
+        .minor-select { width : 120px; }
+        thead, tbody, tr, td, th { display: block; }
+        tr:after { content: ' '; display: block; visibility: hidden; clear: both; }
+        thead th { height: 30px; }
+        tbody { height: 2000px; overflow-y: auto; }
+        tbody td, thead th { width: 10%; float: left; }
+        .cap-td { font-weight:bold }
+    </style>
+    <title>Fire Emblem PoRinquest: Character Average Stats</title>
+</head>
+<body>
+    <div id="container" style="margin: 10px 10px 10px 10px">
+        <div style="float : left; margin : 0px 25px 0px 0px">
+            <p>
+                <h4>Unit Selection</h4>
+                <select id="unit-select" class="unit-selector"><option value="none">Select a unit</option></select>
+                <select id="base-select" class="minor-select" disabled><option value="none" disabled>Select a base</option></select>
+                <select id="extra-select" style="width : 140px"><option value=0>Use Eternal Seals</option></select>
+                <div id="aptitude-check" style="display: none;"><input type="checkbox" name="aptitude"> Aptitude</div>
+            </p>
+            <div id="child-custom" style="display: none;">
+                <p>
+                    <h4>Parent Selection</h4>
+                    <select id="parent-select" class="unit-selector"><option value="none">Select parent</option></select>
+                    <select id="grandparent-select" style="display: none;" class="unit-selector"><option value="none">Select grandparent</option></select>
+                </p>
+            </div>
+            <div id="avatar-custom" style="display: none;">
+                <p>
+                    <h4>Avatar Customization</h4>
+                    Boon
+                    <select id="boon-select" class="minor-select">
+                        <option class="boon" value="HP" selected>HP</option>
+                        <option class="boon" value="Str" disabled>Strength</option>
+                        <option class="boon" value="Mag">Magic</option>
+                        <option class="boon" value="Skl">Skill</option>
+                        <option class="boon" value="Spd">Speed</option>
+                        <option class="boon" value="Lck">Luck</option>
+                        <option class="boon" value="Def">Defense</option>
+                        <option class="boon" value="Res">Resistance</option>
+                    </select>
+                    Bane
+                    <select id="bane-select" class="minor-select">
+                        <option class="bane" value="HP" disabled>HP</option>
+                        <option class="bane" value="Str" selected>Strength</option>
+                        <option class="bane" value="Mag">Magic</option>
+                        <option class="bane" value="Skl">Skill</option>
+                        <option class="bane" value="Spd">Speed</option>
+                        <option class="bane" value="Lck">Luck</option>
+                        <option class="bane" value="Def">Defense</option>
+                        <option class="bane" value="Res">Resistance</option>
+                    </select>
+                </p>
+            </div>
+            <p>
+                <h4>Class Change Options</h4>
+                <select id="level-change-select" class="minor-select" disabled><option value="none" disabled>Select a level</option></select>
+                <select id="class-change-select" style="width : 210px" disabled><option value="none" disabled>Select a class</option></select>
+                <button id="add-seal">Add class change</button>
+                <button id="reset">Reset</button>
+            </p>
+            <div id="class-change-list"></div>
+        </div>
+        <div id="table-div"></div>
+    </div>
+</body>
+</html>

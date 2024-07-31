@@ -584,11 +584,13 @@ db.character = {
 			},
 		},
 		
-		initialize : function(boon, bane) {
+		initialize: function(boon, bane) {
 			var keySet = new Stat(0, 0, 0, 0, 0, 0, 0, 0);
 			this.base.Standard = {};
 			this.base.Standard.level = 1;
 			this.base.Standard.stat = {};
+			this.finalGrowths = {}; // Initialize the final growths property
+		
 			for (var attr in keySet) {
 				if (attr == boon)
 					this.base.Standard.stat[attr] = this.baseMod.none[attr] + this.baseMod.boon[attr];
@@ -596,14 +598,19 @@ db.character = {
 					this.base.Standard.stat[attr] = this.baseMod.none[attr] + this.baseMod.bane[attr];
 				else
 					this.base.Standard.stat[attr] = this.baseMod.none[attr];
+		
 				this.growth[attr] = this.growthMod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
 				this.cap[attr] = this.capMod.boon[boon][attr] + this.capMod.bane[bane][attr];
+		
+				// Store the final growth rates
+				this.finalGrowths[attr] = this.growth[attr];
 			}
-			
+		
 			for (var unit in db.character)
 				if (db.character[unit].varParent)
 					if (db.character[unit].varParent == this || unit == "kanna")
 						db.character[unit].evaluateChildStat();
-		},
+		}
+		
 	}),
 }

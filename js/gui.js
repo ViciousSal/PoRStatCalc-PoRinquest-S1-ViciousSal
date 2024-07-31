@@ -227,7 +227,7 @@ $(document).ready(function() {
 		$("#table-div").empty();
 		
 		var table = $("<table/>").addClass("table table-striped table-hover table-condensed").attr("style", "width: 500px");
-	
+
 		// Headings
 		var headerRow = $("<tr/>");
 		headerRow.append($("<th/>").text("Level"));
@@ -236,12 +236,12 @@ $(document).ready(function() {
 		table.append($("<thead/>").append(headerRow));
 		
 		var tableBody = $("<tbody/>");
-		for (var i = 0; i < levelList.length; i++) {
+		for (var i=0; i<levelList.length; i++) {
 			var header = $("<tr/>").append($("<th/>").text(levelList[i][0].unitClass.name).attr("colspan", 9));
 			tableBody.append(header);
 			
 			// Data
-			for (var j = 0; j < levelList[i].length; j++) {
+			for (var j=0; j<levelList[i].length; j++) {
 				var row = $("<tr/>");
 				row.append($("<td/>").text(levelList[i][j].displayedLevel));
 				for (var attr in levelList[i][j].stat) {
@@ -250,7 +250,7 @@ $(document).ready(function() {
 					if (val >= levelList[i][j].statCap[attr]) {
 						val = levelList[i][j].statCap[attr];
 						cell = $("<td/>").text(val.toFixed(0)).css({ 'font-weight': 'bold' });
-					} else
+					}else
 						cell = $("<td/>").text(val);
 					row.append(cell);
 				}
@@ -264,12 +264,17 @@ $(document).ready(function() {
 			tableBody.append(capRow);
 			
 			// Growths
-			var growthRow = $("<tr/>");
-			growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Growth")));
-			for (var attr in db.character.kamui.finalGrowths)
-				growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(db.character.kamui.finalGrowths[attr] + "%")));
-			tableBody.append(growthRow);
+			var growthrow = $("<tr/>");
+			growthrow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Growth")));
+			for (var attr in levelList[i][0].statGrowth)
+				growthrow.append($("<td/>").append($("<span/>").addClass("growth-td").text(levelList[i][0].statGrowth[attr])));
+			tableBody.append(growthrow);
+			
 		}
+		
+		//$("#table-div").append(header);
+		$("#table-div").append(table.append(tableBody));
 	}
+	
 });
 

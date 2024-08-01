@@ -132,16 +132,16 @@ db.classes = {
 		name	: "Ranger",
 		tier	: "tier1",
 		promoteTo : [ "Lord" ],
-		base	: new Stat(17, 7, 3, 4, 5, 2, 5, 2),
-		growth	: new Stat(15, 15, 10, 10, 10, 10, 10, 5),
+		base	: new Stat(18, 5, 2, 4, 5, 4, 5, 2),
+		growth	: new Stat(70, 25, -5, 15, 25, 35, 5, -5),
 		maxStat	: new Stat(40, 23, 17, 19, 21, 22, 21, 19),
 	},
 	
 	Lord : {
 		name	: "Lord",
 		tier	: "tier2",
-		base	: new Stat(19, 10, 4, 5, 6, 4, 7, 3),
-		growth	: new Stat(15, 15, 10, 10, 10, 10, 15, 0),
+		base	: new Stat(22, 7, 5, 6, 7, 4, 8, 3),
+		growth	: new Stat(70, 25, -5, 15, 25, 35, 5, -5),
 		maxStat	: new Stat(60, 34, 28, 29, 30, 33, 31, 28),
 	},
 	
@@ -149,16 +149,16 @@ db.classes = {
 		name	: "Myrmidon",
 		tier	: "tier1",
 		promoteTo : [ "Swordmaster" ],
-		base	: new Stat(17, 4, 0, 5, 8, 3, 3, 3),
-		growth	: new Stat(10, 10, 0, 15, 20, 15, 0, 10),
+		base	: new Stat(16, 4, 3, 5, 9, 3, 3, 2),
+		growth	: new Stat(35, 30, 10, 35, 45, 10, -5, 5),
 		maxStat	: new Stat(40, 20, 16, 23, 25, 24, 18, 20),
 	},
 	
 	Swordmaster : {
 		name	: "Swordmaster",
 		tier	: "tier2",
-		base	: new Stat(18, 6, 2, 7, 11, 4, 5, 5),
-		growth	: new Stat(10, 10, 5, 15, 20, 15, 0, 10),
+		base	: new Stat(19, 7, 5, 9, 11, 3, 4, 4),
+		growth	: new Stat(35, 30, 10, 35, 45, 10, -5, 5),
 		maxStat	: new Stat(55, 30, 28, 32, 35, 33, 27, 31),
 	},
 	
@@ -166,16 +166,16 @@ db.classes = {
 		name	: "Soldier",
 		tier	: "tier1",
 		promoteTo : [ "Halberdier" ],
-		base	: new Stat(18, 6, 1, 2, 5, 0, 7, 1),
-		growth	: new Stat(20, 20, 10, 0, 10, 0, 20, 0),
+		base	: new Stat(19, 4, 4, 4, 4, 4, 4, 4),
+		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
 		maxStat	: new Stat(45, 24, 19, 16, 20, 17, 23, 18),
 	},
 	
 	Halberdier : {
 		name	: "Halberdier",
 		tier	: "tier2",
-		base	: new Stat(19, 9, 5, 2, 7, 0, 10, 5),
-		growth	: new Stat(10, 20, 15, 0, 10, 0, 20, 5),
+		base	: new Stat(22, 6, 6, 6, 6, 4, 6, 6),
+		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
 		maxStat	: new Stat(60, 34, 28, 25, 30, 25, 36, 31),
 	},
 	
@@ -183,16 +183,16 @@ db.classes = {
 		name	: "Fighter",
 		tier	: "tier1",
 		promoteTo : [ "Warrior" ],
-		base	: new Stat(17, 6, 0, 6, 6, 2, 5, 2),
-		growth	: new Stat(15, 15, 0, 15, 15, 5, 10, 5),
+		base	: new Stat(19, 8, 2, 3, 5, 4, 3, 1),
+		growth	: new Stat(70, 35, -5, 10, 25, 10, 15, 5),
 		maxStat	: new Stat(40, 22, 15, 23, 22, 21, 22, 21),
 	},
 	
 	Warrior : {
 		name	: "Warrior",
 		tier	: "tier2",
-		base	: new Stat(18, 9, 0, 8, 8, 3, 7, 3),
-		growth	: new Stat(15, 15, 0, 15, 15, 5, 10, 5),
+		base	: new Stat(25, 10, 5, 5, 6, 4, 5, 2),
+		growth	: new Stat(70, 35, -5, 10, 25, 10, 15, 5),
 		maxStat	: new Stat(60, 34, 25, 33, 32, 29, 30, 29),
 	},
 	
@@ -200,33 +200,33 @@ db.classes = {
 		name	: "Archer",
 		tier	: "tier1",
 		promoteTo : [ "Sniper" ],
-		base	: new Stat(15, 0, 4, 5, 6, 1, 1, 3),
-		growth	: new Stat(0, 5, 15, 10, 10, 5, 0, 10),
+		base	: new Stat(17, 5, 3, 7, 5, 2, 4, 2),
+		growth	: new Stat(40, 25, 5, 35, 20, 10, 5, 25),
 		maxStat	: new Stat(35, 17, 22, 20, 23, 19, 16, 20),
 	},
 	
 	Sniper : {
 		name	: "Sniper",
 		tier	: "tier2",
-		base	: new Stat(16, 0, 7, 6, 7, 2, 3, 6),
-		growth	: new Stat(0, 0, 20, 10, 15, 0, 0, 15),
+		base	: new Stat(20, 8, 6, 9, 7, 2, 6, 4),
+		growth	: new Stat(40, 25, 5, 35, 20, 10, 5, 25),
 		maxStat	: new Stat(45, 25, 33, 31, 32, 27, 25, 31),
-	},
+	},	
 	
 	Knight : {
 		name	: "Knight",
 		tier	: "tier1",
 		promoteTo : [ "General" ],
-		base	: new Stat(16, 0, 3, 5, 5, 4, 2, 5),
-		growth	: new Stat(0, 5, 10, 10, 15, 15, 0, 20),
+		base	: new Stat(20, 5, 2, 3, 2, 2, 9, 2),
+		growth	: new Stat(55, 25, -5, 25, 5, 5, 40, 15),
 		maxStat	: new Stat(35, 18, 21, 20, 22, 23, 17, 24),
 	},
 	
 	General : {
 		name	: "General",
 		tier	: "tier2",
-		base	: new Stat(19, 8, 6, 6, 8, 5, 6, 7),
-		growth	: new Stat(10, 15, 5, 5, 15, 15, 10, 10),
+		base	: new Stat(26, 7, 3, 4, 4, 2, 11, 5),
+		growth	: new Stat(55, 25, -5, 25, 5, 5, 40, 15),
 		maxStat	: new Stat(55, 32, 30, 31, 33, 32, 28, 32),
 	},
 	
@@ -234,33 +234,33 @@ db.classes = {
 		name	: "Cavalier",
 		tier	: "tier1",
 		promoteTo : [ "Paladin" ],
-		base	: new Stat(16, 3, 0, 5, 7, 4, 2, 6),
-		growth	: new Stat(0, 10, 0, 10, 15, 20, 0, 20),
+		base	: new Stat(18, 5, 3, 3, 5, 3, 6, 2),
+		growth	: new Stat(50, 15, 5, 15, 25, 10, 5, 15),
 		maxStat	: new Stat(35, 19, 16, 21, 23, 25, 18, 25),
 	},
 	
 	Paladin : {
 		name	: "Paladin",
 		tier	: "tier2",
-		base	: new Stat(18, 5, 4, 6, 10, 5, 5, 9),
-		growth	: new Stat(0, 10, 10, 10, 15, 20, 0, 20),
+		base	: new Stat(23, 7, 5, 6, 7, 3, 7, 4),
+		growth	: new Stat(50, 15, 5, 15, 25, 10, 5, 15),
 		maxStat	: new Stat(55, 28, 27, 30, 34, 35, 27, 35),
 	},
-
-	Pegasusknight : {
+	
+	PegasusKnight : {
 		name 	: "Pegasus Knight",
 		tier	: "tier1",
 		promoteTo : [ "Falcoknight" ],
-		base 	: new Stat(16, 3, 0, 8, 8, 1, 3, 3),
-		growth 	: new Stat(5, 5, 0, 20, 20, 0, 5, 15),
+		base 	: new Stat(16, 4, 4, 3, 8, 4, 2, 4),
+		growth 	: new Stat(40, 15, 15, 20, 35, 15, 10, 15),
 		maxStat : new Stat(35, 17, 15, 25, 25, 18, 19, 20),
 	},
 	
 	Falcoknight : {
 		name 	: "Falcoknight",
 		tier	: "tier2",
-		base 	: new Stat(17, 5, 0, 10, 11, 2, 4, 8),
-		growth 	: new Stat(5, 5, 0, 20, 20, 0, 5, 20),
+		base 	: new Stat(19, 6, 6, 5, 10, 4, 4, 8),
+		growth 	: new Stat(40, 15, 15, 20, 35, 15, 10, 15),
 		maxStat : new Stat(55, 27, 25, 35, 35, 28, 26, 34),
 	},
 	
@@ -268,119 +268,102 @@ db.classes = {
 		name	: "Princess",
 		tier	: "tier1",
 		promoteTo : [ "PrincessCrimea" ],
-		base	: new Stat(16, 5, 1, 6, 8, 4, 1, 4),
-		growth	: new Stat(10, 10, 0, 15, 20, 10, 0, 20),
+		base	: new Stat(14, 3, 6, 2, 9, 5, 1, 5),
+		growth	: new Stat(30, 20, 10, 25, 30, 15, 5, 30),
 		maxStat	: new Stat(40, 20, 18, 23, 24, 24, 18, 23),
 	},
-
+	
 	PrincessCrimea : {
 		name	: "Princess Crimea",
 		tier	: "tier2",
-		base	: new Stat(19, 6, 2, 9, 10, 5, 2, 8),
-		growth	: new Stat(10, 10, 0, 15, 20, 10, 0, 20),
-		maxStat	: new Stat(55, 29, 29, 33, 34, 33, 27, 34),
-	},
-	
-	Bandit : {
-		name	: "Bandit",
-		tier	: "tier1",
-		promoteTo : [ "Berserker" ],
-		base	: new Stat(19, 7, 0, 6, 6, 2, 4, 1),
-		growth	: new Stat(20, 20, 0, 15, 15, 5, 5, 0),
-		maxStat	: new Stat(45, 25, 15, 23, 22, 21, 19, 18),
-	},
-	
-	Berserker : {
-		name	: "Berserker",
-		tier	: "tier2",
-		base	: new Stat(24, 12, 0, 8, 9, 0, 5, 0),
-		growth	: new Stat(30, 25, 0, 15, 15, 0, 0, 0),
-		maxStat	: new Stat(70, 40, 25, 32, 33, 25, 27, 25),
-	},
-	
-	WyvernRider : {
-		name	: "Wyvern Rider",
-		tier	: "tier1",
-		promoteTo : [ "WyvernLord" ],
-		base	: new Stat(17, 5, 0, 7, 6, 2, 5, 2),
-		growth	: new Stat(10, 15, 0, 20, 15, 5, 10, 5),
-		maxStat	: new Stat(40, 22, 15, 24, 22, 20, 21, 19),
-	},
-	
-	WyvernLord : {
-		name	: "Wyvern Lord",
-		tier	: "tier2",
-		base	: new Stat(20, 8, 0, 10, 8, 3, 7, 2),
-		growth	: new Stat(20, 15, 0, 20, 15, 5, 10, 0),
-		maxStat	: new Stat(60, 32, 25, 35, 32, 31, 30, 27),
+		base	: new Stat(19, 5, 8, 3, 11, 6, 2, 7),
+		growth	: new Stat(30, 20, 10, 25, 30, 15, 5, 30),
+		maxStat	: new Stat(50, 30, 28, 32, 32, 32, 28, 34),
 	},
 	
 	Mage : {
 		name	: "Mage",
 		tier	: "tier1",
 		promoteTo : [ "Sage" ],
-		base	: new Stat(16, 3, 1, 4, 8, 1, 2, 4),
-		growth	: new Stat(0, 10, 5, 10, 20, 0, 0, 20),
-		maxStat	: new Stat(35, 19, 18, 20, 24, 18, 17, 22),
+		base	: new Stat(15, 2, 5, 4, 6, 5, 2, 4),
+		growth	: new Stat(40, -5, 25, 25, 30, 25, 5, 35),
+		maxStat	: new Stat(35, 17, 20, 23, 21, 24, 21, 25),
 	},
 	
 	Sage : {
 		name	: "Sage",
 		tier	: "tier2",
-		base	: new Stat(17, 4, 6, 6, 10, 2, 3, 8),
-		growth	: new Stat(0, 5, 15, 5, 20, 0, 0, 20),
-		maxStat	: new Stat(50, 27, 31, 27, 34, 27, 25, 34),
+		base	: new Stat(18, 4, 7, 5, 8, 6, 4, 6),
+		growth	: new Stat(40, -5, 25, 25, 30, 25, 5, 35),
+		maxStat	: new Stat(50, 28, 30, 30, 32, 34, 27, 35),
 	},
 	
 	Priest : {
 		name	: "Priest",
 		tier	: "tier1",
 		promoteTo : [ "Bishop" ],
-		base	: new Stat(15, 0, 3, 7, 5, 4, 1, 4),
-		growth	: new Stat(0, 0, 10, 20, 10, 15, 0, 15),
-		maxStat	: new Stat(35, 16, 19, 24, 20, 23, 16, 21),
+		base	: new Stat(15, 3, 6, 2, 4, 5, 2, 6),
+		growth	: new Stat(55, -5, 15, 25, 15, 25, 5, 35),
+		maxStat	: new Stat(35, 17, 20, 19, 21, 21, 20, 26),
 	},
 	
 	Bishop : {
 		name	: "Bishop",
 		tier	: "tier2",
-		base	: new Stat(16, 0, 7, 6, 7, 5, 2, 7),
-		growth	: new Stat(0, 0, 15, 5, 10, 20, 0, 15),
-		maxStat	: new Stat(45, 25, 33, 28, 31, 33, 25, 32),
+		base	: new Stat(19, 5, 8, 3, 6, 6, 4, 9),
+		growth	: new Stat(55, -5, 15, 25, 15, 25, 5, 35),
+		maxStat	: new Stat(50, 28, 28, 28, 30, 33, 28, 35),
 	},
 	
 	Cleric : {
 		name	: "Cleric",
 		tier	: "tier1",
 		promoteTo : [ "Valkyrie" ],
-		base	: new Stat(19, 8, 0, 4, 6, 0, 4, 0),
-		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
-		maxStat	: new Stat(45, 24, 15, 18, 22, 17, 21, 15),
+		base	: new Stat(14, 2, 7, 3, 5, 4, 2, 5),
+		growth	: new Stat(55, -5, 10, 25, 20, 20, 5, 30),
+		maxStat	: new Stat(35, 16, 19, 20, 22, 21, 18, 24),
 	},
 	
 	Valkyrie : {
 		name	: "Valkyrie",
 		tier	: "tier2",
-		base	: new Stat(22, 11, 0, 6, 7, 1, 7, 1),
-		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
-		maxStat	: new Stat(65, 36, 25, 29, 31, 26, 32, 26),
+		base	: new Stat(18, 4, 9, 5, 7, 6, 3, 7),
+		growth	: new Stat(55, -5, 10, 25, 20, 20, 5, 30),
+		maxStat	: new Stat(50, 27, 28, 29, 31, 32, 26, 33),
 	},
 	
 	Thief : {
 		name	: "Thief",
 		tier	: "tier1",
 		promoteTo : [ "Assassin" ],
-		base	: new Stat(19, 8, 0, 4, 6, 0, 4, 0),
-		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
-		maxStat	: new Stat(45, 24, 15, 18, 22, 17, 21, 15),
+		base	: new Stat(16, 3, 3, 5, 9, 2, 3, 1),
+		growth	: new Stat(60, 20, 5, 30, 40, 20, -5, 20),
+		maxStat	: new Stat(35, 16, 19, 22, 25, 19, 16, 20),
 	},
 	
 	Assassin : {
 		name	: "Assassin",
 		tier	: "tier2",
-		base	: new Stat(22, 11, 0, 6, 7, 1, 7, 1),
-		growth	: new Stat(20, 20, 0, 5, 15, 5, 10, 0),
-		maxStat	: new Stat(65, 36, 25, 29, 31, 26, 32, 26),
+		base	: new Stat(19, 5, 5, 7, 11, 3, 4, 3),
+		growth	: new Stat(60, 20, 5, 30, 40, 20, -5, 20),
+		maxStat	: new Stat(50, 27, 27, 30, 32, 28, 25, 28),
+	},
+	
+	Bandit : {
+		name	: "Bandit",
+		tier	: "tier1",
+		promoteTo : [ "Berserker" ],
+		base	: new Stat(20, 8, 2, 3, 6, 2, 5, 1),
+		growth	: new Stat(75, 35, -5, 10, 25, 5, 20, 5),
+		maxStat	: new Stat(40, 21, 14, 21, 23, 20, 21, 19),
+	},
+	
+	Berserker : {
+		name	: "Berserker",
+		tier	: "tier2",
+		base	: new Stat(25, 10, 3, 5, 7, 3, 7, 3),
+		growth	: new Stat(75, 35, -5, 10, 25, 5, 20, 5),
+		maxStat	: new Stat(60, 33, 25, 30, 31, 27, 28, 27),
 	},
 
 	Cat : {
@@ -532,13 +515,13 @@ db.character = {
 		route	: "All",
 		
 		baseMod	: {
-			none : new Stat(19, 7, 4, 7, 6, 5, 6, 2, 5),
+			none : new Stat(18, 5, 2, 4, 5, 4, 5, 2),
 			boon : new Stat(4, 2, 2, 5, 2, 5, 2, 2),
 			bane : new Stat(-4, -2, -2, -3, -2, -3, -2, -2),
 		},
 		
 		growthMod : {
-			none : new Stat(45, 45, 30, 40, 45, 45, 35, 25),
+			none : new Stat(20, 20, 20, 20, 20, 20, 20, 20),
 			boon : {
 				HP	: new Stat(30, 0, 0, 0, 0, 0, 5, 5),
 				Str	: new Stat(0, 15, 0, 5, 0, 0, 5, 0),

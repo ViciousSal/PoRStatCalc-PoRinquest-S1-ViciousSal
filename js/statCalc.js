@@ -269,5 +269,3 @@ StatCalculator.prototype.compute = function() {
 	
 	return averageStats;
 }
-
-						      

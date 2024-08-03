@@ -265,7 +265,7 @@ $(document).ready(function() {
 			
 			// Growths
 			var growthRow = $("<tr/>");
-			growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Growth")));
+			growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Grw")));
 			for (var attr in db.character.kamui.growth)
 				growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(db.character.kamui.growth[attr] + "%")));
 			tableBody.append(growthRow);

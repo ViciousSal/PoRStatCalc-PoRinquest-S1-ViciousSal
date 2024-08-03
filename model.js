@@ -174,7 +174,7 @@ db.classes = {
 	Halberdier : {
 		name	: "Halberdier",
 		tier	: "tier2",
-		base	: new Stat(22, 6, 6, 6, 6, 4, 6, 6),
+		base	: new Stat(24, 6, 6, 6, 6, 4, 6, 6),
 		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
 		maxStat	: new Stat(60, 34, 28, 25, 30, 25, 36, 31),
 	},
@@ -582,7 +582,7 @@ db.character = {
 				else
 					this.base.Standard.stat[attr] = this.baseMod.none[attr];
 		
-				this.growth[attr] = this.growthMod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
+				this.growth[attr] = this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
 				this.cap[attr] = this.capMod.boon[boon][attr] + this.capMod.bane[bane][attr];
 		
 				// Store the final growth rates
@@ -597,3 +597,5 @@ db.character = {
 		
 	}),
 }
+
+

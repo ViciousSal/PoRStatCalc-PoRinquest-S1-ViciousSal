@@ -266,8 +266,8 @@ StatCalculator.prototype.compute = function() {
 		prev = thisLevel;
 		averageStats[i].push(thisLevel);
 	}
-	}
 	
 	return averageStats;
 }
 
+						      

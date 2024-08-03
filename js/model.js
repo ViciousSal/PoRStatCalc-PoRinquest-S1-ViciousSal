@@ -582,7 +582,7 @@ db.character = {
 				else
 					this.base.Standard.stat[attr] = this.baseMod.none[attr];
 		
-				this.growth[attr] = this.growth.Standard.stat[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
+				this.growth[attr] = this.growthmod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
 				this.cap[attr] = this.capMod.boon[boon][attr] + this.capMod.bane[bane][attr];
 		
 				// Store the final growth rates

@@ -269,6 +269,5 @@ StatCalculator.prototype.compute = function() {
 	}
 	
 	return averageStats;
-        var finalGrowths = averageStats*100;
 }
 

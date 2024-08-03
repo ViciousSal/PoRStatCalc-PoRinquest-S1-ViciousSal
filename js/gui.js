@@ -266,8 +266,8 @@ $(document).ready(function() {
 			// Growths
                         var growthRow = $("<tr/>");
                         growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Grw")));
-                         for (var attr in final)
-                        growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(final[attr] + "%")));
+                         for (var attr in growth)
+                        growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(growth[attr] + "%")));
                         tableBody.append(growthRow);
 		}
 	

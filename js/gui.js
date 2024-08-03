@@ -264,11 +264,11 @@ $(document).ready(function() {
 			tableBody.append(capRow);
 			
 			// Growths
-                        var growthRow = $("<tr/>");
-                        growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Grw")));
-                         for (var attr in growth)
-                        growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(growth[attr] + "%")));
-                        tableBody.append(growthRow);
+			var growthRow = $("<tr/>");
+			growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Growth")));
+			for (var attr in db.character.kamui.growth)
+				growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(db.character.kamui.growth[attr] + "%")));
+			tableBody.append(growthRow);
 		}
 	
 		// Append table to div
@@ -283,5 +283,3 @@ $(document).ready(function() {
 	}
 	
 });
-
-									 

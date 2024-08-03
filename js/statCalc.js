@@ -265,6 +265,8 @@ StatCalculator.prototype.compute = function() {
 		}
 		prev = thisLevel;
 		averageStats[i].push(thisLevel);
+		this.finalGrowths[attr] = averageStats[i]*10;
+	}
 	}
 	
 	return averageStats;

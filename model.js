@@ -572,7 +572,6 @@ db.character = {
 			this.base.Standard = {};
 			this.base.Standard.level = 1;
 			this.base.Standard.stat = {};
-			this.growth.Standard.stat = {};
 			this.finalGrowths = {}; // Initialize the final growths property
 		
 			for (var attr in keySet) {
@@ -583,7 +582,7 @@ db.character = {
 				else
 					this.base.Standard.stat[attr] = this.baseMod.none[attr];
 		
-				this.growth[attr] = this.growth.Standard.stat[attr] + this.growthMod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
+				this.growth[attr] = this.growth[attr] + this.growthMod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
 				this.cap[attr] = this.capMod.boon[boon][attr] + this.capMod.bane[bane][attr];
 		
 				// Store the final growth rates

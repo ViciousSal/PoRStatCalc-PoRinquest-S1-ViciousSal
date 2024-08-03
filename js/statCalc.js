@@ -257,6 +257,7 @@ StatCalculator.prototype.compute = function() {
 			
 			for (var attr in this.character.growth) {
 				var growth = (this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude);
+				var final = var growth;
 				// Does not grow if stat is at cap
 				// The extra multiplication eliminates javascript floating point precision problem
 				thisLevel.statCap[attr] = prev.statCap[attr];

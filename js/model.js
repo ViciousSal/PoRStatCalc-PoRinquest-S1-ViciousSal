@@ -584,6 +584,9 @@ db.character = {
 		
 				this.growth[attr] = this.growthMod.none[attr] + this.growthMod.boon[boon][attr] + this.growthMod.bane[bane][attr];
 				this.cap[attr] = this.capMod.boon[boon][attr] + this.capMod.bane[bane][attr];
+
+				// Store the final growth rates
+				this.finalGrowths[attr] = this.growth[attr];
 			}
 		
 			for (var unit in db.character)

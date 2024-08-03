@@ -598,4 +598,3 @@ db.character = {
 	}),
 }
 
-

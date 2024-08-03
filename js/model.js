@@ -174,7 +174,7 @@ db.classes = {
 	Halberdier : {
 		name	: "Halberdier",
 		tier	: "tier2",
-		base	: new Stat(22, 6, 6, 6, 6, 4, 6, 6),
+		base	: new Stat(24, 6, 6, 6, 6, 4, 6, 6),
 		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
 		maxStat	: new Stat(60, 34, 28, 25, 30, 25, 36, 31),
 	},
@@ -597,3 +597,4 @@ db.character = {
 		
 	}),
 }
+

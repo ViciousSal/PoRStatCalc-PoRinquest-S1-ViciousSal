@@ -267,7 +267,7 @@ $(document).ready(function() {
 			var growthRow = $("<tr/>");
 			growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text("Grw")));
 			for (var attr in db.character.kamui.finalGrowths)
-				growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(db.character.kamui.growth[attr] + "%")));
+				growthRow.append($("<td/>").append($("<span/>").addClass("growth-td").text(db.character.kamui.finalGrowths[attr] + "%")));
 			tableBody.append(growthRow);
 		}
 	
@@ -284,3 +284,4 @@ $(document).ready(function() {
 	
 });
 
+									 

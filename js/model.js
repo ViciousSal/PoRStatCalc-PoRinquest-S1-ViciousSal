@@ -235,7 +235,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Paladin" ],
 		base	: new Stat(18, 5, 3, 3, 5, 3, 6, 2),
-		growth	: new Stat(50, 15, 5, 15, 25, 10, 5, 15),
+		growth	: new Stat(50, 20, 0, 20, 25, 10, 20, 20),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -243,7 +243,7 @@ db.classes = {
 		name	: "Paladin",
 		tier	: "tier2",
 		base	: new Stat(23, 7, 5, 6, 7, 3, 7, 4),
-		growth	: new Stat(50, 15, 5, 15, 25, 10, 5, 15),
+		growth	: new Stat(50, 20, 0, 20, 25, 10, 20, 20),
 		maxStat	: new Stat(55, 25, 20, 25, 27, 35, 25, 25),
 	},
 	
@@ -286,7 +286,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Sage" ],
 		base	: new Stat(17, 2, 6, 4, 6, 3, 2, 5),
-		growth	: new Stat(40, -5, 25, 25, 30, 25, 5, 35),
+		growth	: new Stat(40, 0, 45, 20, 30, 0, 0, 30),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 30, 20, 20),
 	},
 	
@@ -294,7 +294,7 @@ db.classes = {
 		name	: "Sage",
 		tier	: "tier2",
 		base	: new Stat(20, 4, 8, 6, 9, 3, 4, 8),
-		growth	: new Stat(40, -5, 25, 25, 30, 25, 5, 35),
+		growth	: new Stat(40, 0, 45, 20, 30, 0, 0, 30),
 		maxStat	: new Stat(55, 21, 30, 26, 28, 35, 20, 27),
 	},
 	
@@ -303,7 +303,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Bishop" ],
 		base	: new Stat(16, 0, 8, 2, 4, 7, 0, 8),
-		growth	: new Stat(55, -5, 15, 25, 15, 25, 5, 35),
+		growth	: new Stat(35, -5, 35, 10, 15, 40, -5, 40),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 35, 20, 20),
 	},
 	
@@ -311,7 +311,7 @@ db.classes = {
 		name	: "Bishop",
 		tier	: "tier2",
 		base	: new Stat(20, 1, 11, 4, 6, 7, 1, 12),
-		growth	: new Stat(55, -5, 15, 25, 15, 25, 5, 35),
+		growth	: new Stat(35, -5, 35, 10, 15, 40,-5, 40),
 		maxStat	: new Stat(50, 20, 28, 25, 26, 40, 21, 30),
 	},
 	
@@ -320,7 +320,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Valkyrie" ],
 		base	: new Stat(15, 2, 7, 3, 2, 8, 2, 6),
-		growth	: new Stat(55, -5, 10, 25, 20, 20, 5, 30),
+		growth	: new Stat(30, 15, 25, 20, 30, 25, -10, 30),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 35, 20, 20),
 	},
 	
@@ -328,7 +328,7 @@ db.classes = {
 		name	: "Valkyrie",
 		tier	: "tier2",
 		base	: new Stat(18, 6, 10, 4, 5, 8, 4, 7),
-		growth	: new Stat(55, -5, 10, 25, 20, 20, 5, 30),
+		growth	: new Stat(30, 15, 25, 20, 30, 25, -10, 30),
 		maxStat	: new Stat(50, 24, 27, 24, 26, 40, 23, 29),
 	},
 	
@@ -337,7 +337,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Assassin" ],
 		base	: new Stat(16, 5, 3, 4, 10, 3, 3, 1),
-		growth	: new Stat(60, 20, 5, 30, 40, 20, -5, 20),
+		growth	: new Stat(40, 25, -5, 35, 40, 20, 10, 0),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -345,7 +345,7 @@ db.classes = {
 		name	: "Assassin",
 		tier	: "tier2",
 		base	: new Stat(18, 7, 6, 8, 13, 3, 4, 3),
-		growth	: new Stat(60, 20, 5, 30, 40, 20, -5, 20),
+		growth	: new Stat(40, 25, -5, 35, 40, 20, 10, 0),
 		maxStat	: new Stat(60, 25, 23, 34, 34, 30, 22, 20),
 	},
 	
@@ -354,7 +354,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Berserker" ],
 		base	: new Stat(20, 9, 0, 2, 7, 3, 4, 0),
-		growth	: new Stat(75, 35, -5, 10, 25, 5, 20, 5),
+		growth	: new Stat(80, 40, -10, 5, 30, 5, 20, -5),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -362,7 +362,7 @@ db.classes = {
 		name	: "Berserker",
 		tier	: "tier2",
 		base	: new Stat(27, 10, 2, 4, 10, 4, 5, 0),
-		growth	: new Stat(75, 35, -5, 10, 25, 5, 20, 5),
+		growth	: new Stat(80, 40, -10, 5, 30, 5, 20, -5),
 		maxStat	: new Stat(70, 30, 19, 23, 29, 30, 21, 19),
 	},
 
@@ -371,7 +371,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Cat2" ],
 		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 
@@ -379,7 +379,7 @@ db.classes = {
 		name	: "Cat Laguz",
 		tier	: "tier2",
 		base	: new Stat(18, 6, 4, 8, 10, 6, 5, 5),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -388,7 +388,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Tiger2" ],
 		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
-		growth	: new Stat(0, 10, 15, 5, 15, 15, 0, 20),
+		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
 		maxStat	: new Stat(45, 27, 32, 28, 33, 32, 26, 34),
 	},
 
@@ -396,7 +396,7 @@ db.classes = {
 		name	: "Tiger Laguz",
 		tier	: "tier2",
 		base	: new Stat(22, 10, 4, 6, 7, 3, 7, 3),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -405,7 +405,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Lion2" ],
 		base	: new Stat(20, 9, 1, 6, 2, 1, 6, 0),
-		growth	: new Stat(15, 15, 5, 5, 15, 0, 5, 20),
+		growth	: new Stat(85, 50, -15, 10, 0, 0, 40, -5),
 		maxStat	: new Stat(55, 32, 28, 29, 31, 26, 29, 34),
 	},
 
@@ -413,7 +413,7 @@ db.classes = {
 		name	: "Lion Laguz",
 		tier	: "tier2",
 		base	: new Stat(24, 13, 1, 8, 5, 1, 9, 1),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(85, 50, -15, 10, 0, 0, 40, -5),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -422,7 +422,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Hawk2" ],
 		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
-		growth	: new Stat(15, 10, 0, 20, 10, 25, 5, 5),
+		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
 		maxStat	: new Stat(60, 29, 26, 35, 33, 40, 30, 29),
 	},
 
@@ -430,7 +430,7 @@ db.classes = {
 		name	: "Hawk Laguz",
 		tier	: "tier2",
 		base	: new Stat(19, 9, 5, 9, 7, 3, 6, 4),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -439,7 +439,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Raven2" ],
 		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
-		growth	: new Stat(15, 15, 0, 10, 10, 15, 10, 5),
+		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
 		maxStat	: new Stat(60, 30, 25, 32, 34, 35, 29, 31),
 	},
 
@@ -447,7 +447,7 @@ db.classes = {
 		name	: "Raven Laguz",
 		tier	: "tier2",
 		base	: new Stat(16, 7, 8, 9, 11, 0, 5, 6),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -456,7 +456,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "RedDrake2" ],
 		base	: new Stat(20, 10, 0, 3, 1, 1, 9, 1),
-		growth	: new Stat(20, 20, 0, 5, 5, 10, 15, 0),
+		growth	: new Stat(95, 50, -15, 0, -10, -5, 55, -5),
 		maxStat	: new Stat(65, 36, 25, 29, 30, 30, 32, 27),
 	},
 
@@ -464,7 +464,7 @@ db.classes = {
 		name	: "Red Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(26, 15, 0, 5, 3, 1, 11, 1),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(95, 50, -15, 0, -10, -5, 55, -5),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -473,7 +473,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "WhiteDrake2" ],
 		base	: new Stat(16, 2, 7, 3, 6, 3, 1, 7),
-		growth	: new Stat(20, 20, 0, 5, 5, 10, 15, 0),
+		growth	: new Stat(55, -15, 55, 15, 35, 5, -5, 20),
 		maxStat	: new Stat(65, 36, 25, 29, 30, 30, 32, 27),
 	},
 
@@ -481,7 +481,7 @@ db.classes = {
 		name	: "White Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(19, 3, 11, 6, 9, 3, 3, 8),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(55, -15, 55, 15, 35, 5, -5, 20),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 	
@@ -490,7 +490,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Heron2" ],
 		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
-		growth	: new Stat(20, 20, 0, 5, 5, 10, 15, 0),
+		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
 		maxStat	: new Stat(65, 36, 25, 29, 30, 30, 32, 27),
 	},
 
@@ -498,7 +498,7 @@ db.classes = {
 		name	: "Heron Laguz",
 		tier	: "tier2",
 		base	: new Stat(16, 1, 11, 3, 11, 6, 2, 12),
-		growth	: new Stat(0, 10, 0, 20, 20, 20, 0, 0),
+		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
 		maxStat	: new Stat(45, 28, 27, 31, 31, 35, 27, 28),
 	},
 }

@@ -281,6 +281,23 @@ db.classes = {
 		maxStat	: new Stat(50, 21, 28, 22, 28, 40, 20, 30),
 	},
 	
+	WyvernRider : {
+		name	: "Wyvern Rider",
+		tier	: "tier1",
+		promoteTo : [ "WyvernLord" ],
+		base	: new Stat(19, 6, 1, 5, 3, 3, 7, 1),
+		growth	: new Stat(65, 35, -5, 15, 15, 5, 35, 0),
+		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
+	},
+	
+	WyvernLord : {
+		name	: "Wyvern Lord",
+		tier	: "tier2",
+		base	: new Stat(25, 8, 2, 7, 5, 3, 10, 2),
+		growth	: new Stat(65, 35, -5, 15, 15, 5, 35, 0),
+		maxStat	: new Stat(60, 28, 19, 27, 25, 30, 28, 19),
+	},
+	
 	Mage : {
 		name	: "Mage",
 		tier	: "tier1",
@@ -405,7 +422,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Lion2" ],
 		base	: new Stat(20, 9, 1, 6, 2, 1, 6, 0),
-		growth	: new Stat(85, 50, -15, 10, 0, 0, 40, -5),
+		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
 		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
 	},
 
@@ -413,7 +430,7 @@ db.classes = {
 		name	: "Lion Laguz",
 		tier	: "tier2",
 		base	: new Stat(24, 13, 1, 8, 5, 1, 9, 1),
-		growth	: new Stat(85, 50, -15, 10, 0, 0, 40, -5),
+		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
 		maxStat	: new Stat(74, 30, 19, 28, 21, 30, 29, 19),
 	},
 	
@@ -456,7 +473,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "RedDrake2" ],
 		base	: new Stat(20, 10, 0, 3, 1, 1, 9, 1),
-		growth	: new Stat(95, 50, -15, 0, -10, -5, 55, -5),
+		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
 
@@ -464,7 +481,7 @@ db.classes = {
 		name	: "Red Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(26, 15, 0, 5, 3, 1, 11, 1),
-		growth	: new Stat(95, 50, -15, 0, -10, -5, 55, -5),
+		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
 	
@@ -473,7 +490,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "WhiteDrake2" ],
 		base	: new Stat(16, 2, 7, 3, 6, 3, 1, 7),
-		growth	: new Stat(55, -15, 55, 15, 35, 5, -5, 20),
+		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 	},
 
@@ -481,7 +498,7 @@ db.classes = {
 		name	: "White Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(19, 3, 11, 6, 9, 3, 3, 8),
-		growth	: new Stat(55, -15, 55, 15, 35, 5, -5, 20),
+		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 	},
 	

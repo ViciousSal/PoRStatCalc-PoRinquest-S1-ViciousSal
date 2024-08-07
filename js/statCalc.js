@@ -16,6 +16,7 @@ var LevelAttribute = function(unitClass, stat) {
 	this.unitClass = unitClass;
 	this.stat = stat;
 	this.statCap = {};
+	this.growth = {};
 	this.tier1Level = 0;
 	this.tier2Level = 0;
 }
@@ -254,13 +255,14 @@ StatCalculator.prototype.compute = function() {
 			// No change, calculate growth as per normal
 			var thisLevel = new LevelAttribute(prev.unitClass, {});
 			thisLevel.increaseLevel(prev);
-			
+			thisLevel.growth = {}	
 			for (var attr in this.character.growth) {
 				var growth = (this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude);
 				// Does not grow if stat is at cap
 				// The extra multiplication eliminates javascript floating point precision problem
 				thisLevel.statCap[attr] = prev.statCap[attr];
 				thisLevel.stat[attr] = Math.min((prev.stat[attr]*FIX + growth*FIX/100)/FIX, thisLevel.statCap[attr]);	
+				thisLevel.growth[attr] = growth
 			}
 		}
 		prev = thisLevel;

@@ -472,7 +472,7 @@ db.classes = {
 		name	: "Red Dragon",
 		tier	: "tier1",
 		promoteTo : [ "RedDrake2" ],
-		base	: new Stat(20, 8, 2, 3, 1, 1, 9, 1),
+		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
 		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
@@ -480,7 +480,7 @@ db.classes = {
 	RedDrake2 : {
 		name	: "Red Dragon Laguz",
 		tier	: "tier2",
-		base	: new Stat(26, 12, 2, 5, 3, 1, 11, 2),
+		base	: new Stat(28, 12, 2, 5, 4, 1, 8, 2),
 		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},

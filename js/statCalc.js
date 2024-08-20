@@ -257,22 +257,22 @@ StatCalculator.prototype.compute = function() {
             thisLevel.increaseLevel(prev);
             thisLevel.growth = {};
             
-            // Check for the doubleModifier flag
+           // Retrieve the doubleModifier flag from the current class
             var doubleModifier = prev.unitClass.doubleModifier || false;
 
             for (var attr in this.character.growth) {
-                var growth = (this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude);
-                
-                // Apply doubleModifier effect
+                var growth = this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude;
+
+                // Apply doubleModifier effect only to growths
                 if (doubleModifier) {
                     if (attr === this.character.boon) {
-                        growth += growth;  // Double the boon effect
+                        growth += this.character.growth[attr];  // Double the boon effect on growth
                     }
                     if (attr === this.character.bane) {
-                        growth -= growth;  // Double the bane effect
+                        growth -= this.character.growth[attr];  // Double the bane effect on growth
                     }
                 }
-                
+
                 // Does not grow if stat is at cap
                 thisLevel.statCap[attr] = prev.statCap[attr];
                 thisLevel.stat[attr] = Math.min((prev.stat[attr] * FIX + growth * FIX / 100) / FIX, thisLevel.statCap[attr]);

@@ -406,6 +406,7 @@ db.classes = {
 		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
 		growth	: new Stat(75, 55, 35, 70, 110, 40, 5, 10),
 		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 		
 	Tiger : {
@@ -431,6 +432,7 @@ db.classes = {
 		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
 		growth	: new Stat(150, 85, 5, 15, 40, 20, 60, 15),
 		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	Lion : {
@@ -456,6 +458,7 @@ db.classes = {
 		base	: new Stat(20, 8, 1, 6, 2, 3, 5, 0),
 		growth	: new Stat(180, 90, -5, 25, 10, 10, 90, 5),
 		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	Hawk : {
@@ -481,6 +484,7 @@ db.classes = {
 		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
 		growth	: new Stat(130, 50, 25, 55, 45, 10, 35, 30),
 		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	Raven : {
@@ -506,6 +510,7 @@ db.classes = {
 		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
 		growth	: new Stat(95, 50, 40, 55, 70, 0, 25, 55),
 		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	RedDrake : {
@@ -531,6 +536,7 @@ db.classes = {
 		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
 		growth	: new Stat(195, 85, -5, 15, 0, 10, 115, 0),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	WhiteDrake : {
@@ -556,6 +562,7 @@ db.classes = {
 		base	: new Stat(16, 2, 5, 3, 5, 5, 2, 7),
 		growth	: new Stat(140, 0, 90, 50, 60, 20, 5, 45),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 	
 	Heron : {
@@ -581,6 +588,7 @@ db.classes = {
 		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
 		growth	: new Stat(65, 0, 90, 5, 80, 60, 0, 130),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
+		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
 }
 

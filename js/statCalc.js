@@ -223,51 +223,66 @@ StatCalculator.prototype.getLatestClassChange = function() {
 }
 
 StatCalculator.prototype.compute = function() {
-	var averageStats = [[]];
-	
-	// Starting level is defined by character base
-	var baseStat = this.character.base[this.baseSet];
-	var startingLevel = new LevelAttribute(db.classes[this.character.baseClass], baseStat.stat);
-	if (db.classes[this.character.baseClass].tier != "tier2")
-		startingLevel.setInitialLevel(baseStat.level, 0);
-	else
-		startingLevel.setInitialLevel(0, baseStat.level);
-	for (var attr in startingLevel.stat)
-		startingLevel.statCap[attr] = db.classes[this.character.baseClass].maxStat[attr] + this.character.cap[attr];
-	averageStats[0].push(startingLevel);
-	var prev = startingLevel;
-	
-	// Loop until there are no more class changes and character has reached level cap
-	for (var i=0; i<this.classChanges.length || !prev.isAtCap(this.extraLevel, this.specialExtraLevel); ) {
-		if (this.classChanges[i] && prev.displayedLevel == this.classChanges[i].level) {
-			// Class changed, adjust the stat using class base stat
-			var newClass = this.classChanges[i].targetClass;
-			var oldClass = prev.unitClass;
-			var thisLevel = new LevelAttribute(newClass, {});
-			thisLevel.increaseLevel(prev);
-			
-			for (var attr in newClass.base) {
-				thisLevel.statCap[attr] = newClass.maxStat[attr] + this.character.cap[attr];
-				thisLevel.stat[attr] = (prev.stat[attr]*FIX + newClass.base[attr]*FIX - oldClass.base[attr]*FIX)/FIX;
-			}
-			averageStats[++i] = [];
-		}else {
-			// No change, calculate growth as per normal
-			var thisLevel = new LevelAttribute(prev.unitClass, {});
-			thisLevel.increaseLevel(prev);
-			thisLevel.growth = {}	
-			for (var attr in this.character.growth) {
-				var growth = (this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude);
-				// Does not grow if stat is at cap
-				// The extra multiplication eliminates javascript floating point precision problem
-				thisLevel.statCap[attr] = prev.statCap[attr];
-				thisLevel.stat[attr] = Math.min((prev.stat[attr]*FIX + growth*FIX/100)/FIX, thisLevel.statCap[attr]);	
-				thisLevel.growth[attr] = growth
-			}
-		}
-		prev = thisLevel;
-		averageStats[i].push(thisLevel);
-	}
-	
-	return averageStats;
+    var averageStats = [[]];
+    
+    // Starting level is defined by character base
+    var baseStat = this.character.base[this.baseSet];
+    var startingLevel = new LevelAttribute(db.classes[this.character.baseClass], baseStat.stat);
+    if (db.classes[this.character.baseClass].tier != "tier2")
+        startingLevel.setInitialLevel(baseStat.level, 0);
+    else
+        startingLevel.setInitialLevel(0, baseStat.level);
+    for (var attr in startingLevel.stat)
+        startingLevel.statCap[attr] = db.classes[this.character.baseClass].maxStat[attr] + this.character.cap[attr];
+    averageStats[0].push(startingLevel);
+    var prev = startingLevel;
+    
+    // Loop until there are no more class changes and character has reached level cap
+    for (var i = 0; i < this.classChanges.length || !prev.isAtCap(this.extraLevel, this.specialExtraLevel); ) {
+        if (this.classChanges[i] && prev.displayedLevel == this.classChanges[i].level) {
+            // Class changed, adjust the stat using class base stat
+            var newClass = this.classChanges[i].targetClass;
+            var oldClass = prev.unitClass;
+            var thisLevel = new LevelAttribute(newClass, {});
+            thisLevel.increaseLevel(prev);
+            
+            for (var attr in newClass.base) {
+                thisLevel.statCap[attr] = newClass.maxStat[attr] + this.character.cap[attr];
+                thisLevel.stat[attr] = (prev.stat[attr]*FIX + newClass.base[attr]*FIX - oldClass.base[attr]*FIX)/FIX;
+            }
+            averageStats[++i] = [];
+        } else {
+            // No change, calculate growth as per normal
+            var thisLevel = new LevelAttribute(prev.unitClass, {});
+            thisLevel.increaseLevel(prev);
+            thisLevel.growth = {};
+            
+            // Check for the doubleModifier flag
+            var doubleModifier = prev.unitClass.doubleModifier || false;
+
+            for (var attr in this.character.growth) {
+                var growth = (this.character.growth[attr] + prev.unitClass.growth[attr] + this.aptitude);
+                
+                // Apply doubleModifier effect
+                if (doubleModifier) {
+                    if (attr === this.character.boon) {
+                        growth += growth;  // Double the boon effect
+                    }
+                    if (attr === this.character.bane) {
+                        growth -= growth;  // Double the bane effect
+                    }
+                }
+                
+                // Does not grow if stat is at cap
+                thisLevel.statCap[attr] = prev.statCap[attr];
+                thisLevel.stat[attr] = Math.min((prev.stat[attr] * FIX + growth * FIX / 100) / FIX, thisLevel.statCap[attr]);
+                thisLevel.growth[attr] = growth;
+            }
+        }
+        prev = thisLevel;
+        averageStats[i].push(thisLevel);
+    }
+    
+    return averageStats;
 }
+

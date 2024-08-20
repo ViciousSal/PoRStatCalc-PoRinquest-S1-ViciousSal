@@ -610,7 +610,7 @@ db.character = {
 		},
 		
 		growthMod : {
-			none : new Stat(20, 20, 20, 20, 20, 20, 20, 20),
+			none : new Stat(0, 0, 0, 0, 0, 0, 0, 0),
 			boon : {
 				HP	: new Stat(30, 0, 0, 0, 0, 0, 5, 5),
 				Str	: new Stat(0, 15, 0, 5, 0, 0, 5, 0),

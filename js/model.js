@@ -534,7 +534,7 @@ db.classes = {
 		name	: "Red Dragon New",
 		tier	: "tier1",
 		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
-		growth	: new Stat(235, 125, 35, 55, 4, 50, 155, 40),
+		growth	: new Stat(235, 125, 35, 55, 45, 50, 155, 40),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},

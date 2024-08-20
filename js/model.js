@@ -386,67 +386,31 @@ db.classes = {
 	Cat : {
 		name	: "Cat",
 		tier	: "tier1",
-		promoteTo : [ "Cat2" ],
 		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
-		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
-		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
-	},
-
-	Cat2 : {
-		name	: "Cat Laguz",
-		tier	: "tier2",
-		base	: new Stat(18, 6, 4, 8, 10, 6, 5, 5),
-		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
+		growth	: new Stat(75, 55, 35, 70, 110, 40, 5, 10),
 		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
 	},
 	
 	Tiger : {
 		name	: "Tiger",
 		tier	: "tier1",
-		promoteTo : [ "Tiger2" ],
 		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
-		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
-		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
-	},
-
-	Tiger2 : {
-		name	: "Tiger Laguz",
-		tier	: "tier2",
-		base	: new Stat(22, 10, 4, 6, 7, 3, 7, 3),
-		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
+		growth	: new Stat(150, 85, -5, 15, 15, 10, 25, 5),
 		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
 	},
 	
 	Lion : {
 		name	: "Lion",
 		tier	: "tier1",
-		promoteTo : [ "Lion2" ],
 		base	: new Stat(20, 8, 1, 6, 2, 3, 5, 0),
 		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
 		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
-	},
-
-	Lion2 : {
-		name	: "Lion Laguz",
-		tier	: "tier2",
-		base	: new Stat(24, 11, 1, 8, 5, 3, 7, 3),
-		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
-		maxStat	: new Stat(74, 30, 19, 28, 21, 30, 29, 19),
 	},
 	
 	Hawk : {
 		name	: "Hawk",
 		tier	: "tier1",
-		promoteTo : [ "Hawk2" ],
 		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
-		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
-		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
-	},
-
-	Hawk2 : {
-		name	: "Hawk Laguz",
-		tier	: "tier2",
-		base	: new Stat(19, 9, 5, 9, 7, 3, 6, 4),
 		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
 		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
 	},
@@ -454,16 +418,7 @@ db.classes = {
 	Raven : {
 		name	: "Raven",
 		tier	: "tier1",
-		promoteTo : [ "Raven2" ],
 		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
-		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
-		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
-	},
-
-	Raven2 : {
-		name	: "Raven Laguz",
-		tier	: "tier2",
-		base	: new Stat(16, 7, 8, 9, 11, 0, 5, 6),
 		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
 		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
 	},
@@ -471,16 +426,7 @@ db.classes = {
 	RedDrake : {
 		name	: "Red Dragon",
 		tier	: "tier1",
-		promoteTo : [ "RedDrake2" ],
 		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
-		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
-		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
-	},
-
-	RedDrake2 : {
-		name	: "Red Dragon Laguz",
-		tier	: "tier2",
-		base	: new Stat(28, 12, 2, 5, 4, 1, 8, 2),
 		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
@@ -488,16 +434,7 @@ db.classes = {
 	WhiteDrake : {
 		name	: "White Dragon",
 		tier	: "tier1",
-		promoteTo : [ "WhiteDrake2" ],
 		base	: new Stat(16, 2, 5, 3, 5, 5, 2, 7),
-		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
-		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
-	},
-
-	WhiteDrake2 : {
-		name	: "White Dragon Laguz",
-		tier	: "tier2",
-		base	: new Stat(19, 3, 8, 7, 7, 5, 4, 9),
 		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 	},
@@ -505,17 +442,73 @@ db.classes = {
 	Heron : {
 		name	: "Heron",
 		tier	: "tier1",
-		promoteTo : [ "Heron2" ],
 		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
 		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
 	},
+	
 
-	Heron2 : {
-		name	: "Heron Laguz",
-		tier	: "tier2",
-		base	: new Stat(16, 1, 11, 3, 11, 6, 2, 12),
-		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
+	Cat3 : {
+		name	: "Cat New",
+		tier	: "tier1",
+		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
+		growth	: new Stat(75, 55, 35, 70, 110, 40, 5, 10),
+		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
+	},
+	
+	Tiger3 : {
+		name	: "Tiger New",
+		tier	: "tier1",
+		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
+		growth	: new Stat(150, 85, 0, 15, 40, 20, 60, 15),
+		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
+	},
+	
+	Lion3 : {
+		name	: "Lion New",
+		tier	: "tier1",
+		base	: new Stat(20, 8, 1, 6, 2, 3, 5, 0),
+		growth	: new Stat(180, 90, -10, 25, 10, 10, 90, 0),
+		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
+	},
+	
+	Hawk3 : {
+		name	: "Hawk New",
+		tier	: "tier1",
+		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
+		growth	: new Stat(130, 50, 25, 55, 45, 10, 35, 30),
+		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
+	},
+	
+	Raven3 : {
+		name	: "Raven New",
+		tier	: "tier1",
+		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
+		growth	: new Stat(95, 50, 40, 55, 65, 0, 25, 60),
+		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
+	},
+	
+	RedDrake3 : {
+		name	: "Red Dragon New",
+		tier	: "tier1",
+		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
+		growth	: new Stat(195, 85, -10, 15, 0, 10, 155, -5),
+		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
+	},
+	
+	WhiteDrake3 : {
+		name	: "White Dragon New",
+		tier	: "tier1",
+		base	: new Stat(16, 2, 5, 3, 5, 5, 2, 7),
+		growth	: new Stat(140, -5, 90, 50, 60, 20, 5, 45),
+		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
+	},
+	
+	Heron3 : {
+		name	: "Heron New",
+		tier	: "tier1",
+		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
+		growth	: new Stat(65, -5, 90, 0, 80, 60, 0, 130),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
 	},
 }

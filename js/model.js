@@ -133,7 +133,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Lord" ],
 		base	: new Stat(18, 5, 2, 4, 5, 4, 5, 2),
-		growth	: new Stat(70, 25, -5, 15, 25, 35, 5, -5),
+		growth	: new Stat(90, 45, 15, 35, 45, 55, 25, 15),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -141,7 +141,7 @@ db.classes = {
 		name	: "Lord",
 		tier	: "tier2",
 		base	: new Stat(22, 7, 5, 6, 7, 4, 8, 3),
-		growth	: new Stat(70, 25, -5, 15, 25, 35, 5, -5),
+		growth	: new Stat(90, 35, 15, 35, 55, 55, 25, 15),
 		maxStat	: new Stat(60, 26, 20, 27, 28, 30, 24, 22),
 	},
 	
@@ -150,7 +150,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Swordmaster" ],
 		base	: new Stat(16, 4, 3, 5, 9, 3, 3, 2),
-		growth	: new Stat(35, 30, 10, 35, 45, 10, -5, 5),
+		growth	: new Stat(55, 50, 30, 55, 65, 30, 15, 25),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -158,7 +158,7 @@ db.classes = {
 		name	: "Swordmaster",
 		tier	: "tier2",
 		base	: new Stat(19, 7, 5, 9, 11, 3, 4, 4),
-		growth	: new Stat(35, 30, 10, 35, 45, 10, -5, 5),
+		growth	: new Stat(55, 50, 30, 55, 65, 30, 15, 25),
 		maxStat	: new Stat(55, 24, 23, 31, 31, 35, 22, 21),
 	},
 	
@@ -167,7 +167,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Halberdier" ],
 		base	: new Stat(19, 4, 4, 4, 4, 4, 4, 4),
-		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
+		growth	: new Stat(80, 35, 35, 35, 35, 35, 35, 35),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -175,7 +175,7 @@ db.classes = {
 		name	: "Halberdier",
 		tier	: "tier2",
 		base	: new Stat(24, 6, 6, 6, 6, 4, 6, 6),
-		growth	: new Stat(60, 15, 15, 15, 15, 15, 15, 15),
+		growth	: new Stat(80, 35, 35, 35, 35, 35, 35, 35),
 		maxStat	: new Stat(60, 25, 21, 26, 26, 30, 27, 23),
 	},
 	
@@ -184,7 +184,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Warrior" ],
 		base	: new Stat(19, 8, 2, 3, 5, 4, 3, 1),
-		growth	: new Stat(70, 35, -5, 10, 25, 10, 15, 5),
+		growth	: new Stat(90, 55, 15, 30, 45, 30, 35, 25),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -192,7 +192,7 @@ db.classes = {
 		name	: "Warrior",
 		tier	: "tier2",
 		base	: new Stat(25, 10, 5, 5, 6, 4, 5, 2),
-		growth	: new Stat(70, 35, -5, 10, 25, 10, 15, 5),
+		growth	: new Stat(90, 55, 15, 30, 45, 30, 35, 25),
 		maxStat	: new Stat(65, 29, 20, 22, 27, 35, 25, 20),
 	},
 	
@@ -201,7 +201,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Sniper" ],
 		base	: new Stat(17, 5, 3, 7, 5, 2, 4, 2),
-		growth	: new Stat(40, 25, 5, 35, 20, 10, 5, 25),
+		growth	: new Stat(60, 45, 25, 55, 40, 30, 25, 45),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -209,7 +209,7 @@ db.classes = {
 		name	: "Sniper",
 		tier	: "tier2",
 		base	: new Stat(20, 8, 6, 9, 7, 2, 6, 4),
-		growth	: new Stat(40, 25, 5, 35, 20, 10, 5, 25),
+		growth	: new Stat(60, 45, 25, 55, 40, 30, 25, 45),
 		maxStat	: new Stat(50, 27, 24, 33, 28, 35, 20, 24),
 	},	
 	
@@ -218,7 +218,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "General" ],
 		base	: new Stat(20, 5, 2, 3, 2, 2, 9, 2),
-		growth	: new Stat(55, 25, -5, 25, 5, 5, 40, 15),
+		growth	: new Stat(75, 45, 15, 45, 25, 25, 60, 35),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -226,7 +226,7 @@ db.classes = {
 		name	: "General",
 		tier	: "tier2",
 		base	: new Stat(26, 7, 3, 4, 4, 2, 11, 5),
-		growth	: new Stat(55, 25, -5, 25, 5, 5, 40, 15),
+		growth	: new Stat(75, 45, 15, 45, 25, 25, 60, 35),
 		maxStat	: new Stat(70, 28, 21, 25, 23, 30, 30, 25),
 	},
 	
@@ -235,7 +235,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Paladin" ],
 		base	: new Stat(18, 5, 3, 3, 5, 3, 6, 2),
-		growth	: new Stat(50, 20, 0, 20, 25, 10, 20, 20),
+		growth	: new Stat(70, 40, 20, 40, 45, 30, 40, 40),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -243,7 +243,7 @@ db.classes = {
 		name	: "Paladin",
 		tier	: "tier2",
 		base	: new Stat(23, 7, 5, 6, 7, 3, 7, 4),
-		growth	: new Stat(50, 20, 0, 20, 25, 10, 20, 20),
+		growth	: new Stat(70, 40, 20, 40, 45, 30, 40, 40),
 		maxStat	: new Stat(55, 25, 20, 25, 27, 35, 25, 25),
 	},
 	
@@ -252,7 +252,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Falcoknight" ],
 		base 	: new Stat(16, 4, 4, 3, 8, 4, 2, 4),
-		growth 	: new Stat(40, 15, 15, 20, 35, 15, 10, 15),
+		growth 	: new Stat(60, 35, 35, 40, 55, 35, 30, 35),
 		maxStat : new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -260,7 +260,7 @@ db.classes = {
 		name 	: "Falcoknight",
 		tier	: "tier2",
 		base 	: new Stat(19, 6, 6, 5, 10, 4, 4, 8),
-		growth 	: new Stat(40, 15, 15, 20, 35, 15, 10, 15),
+		growth 	: new Stat(60, 35, 35, 40, 55, 35, 30, 35),
 		maxStat : new Stat(55, 24, 24, 27, 30, 30, 21, 28),
 	},
 	
@@ -269,7 +269,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "PrincessCrimea" ],
 		base	: new Stat(14, 3, 6, 2, 9, 5, 1, 5),
-		growth	: new Stat(30, 20, 10, 25, 30, 15, 5, 30),
+		growth	: new Stat(50, 40, 30, 45, 50, 35, 25, 50),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 25, 20, 20),
 	},
 	
@@ -277,7 +277,7 @@ db.classes = {
 		name	: "Princess Crimea",
 		tier	: "tier2",
 		base	: new Stat(17, 5, 9, 3, 11, 5, 2, 10),
-		growth	: new Stat(30, 20, 10, 25, 30, 15, 5, 30),
+		growth	: new Stat(50, 40, 30, 45, 50, 35, 25, 50),
 		maxStat	: new Stat(50, 21, 28, 22, 28, 40, 20, 30),
 	},
 	
@@ -286,7 +286,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "WyvernLord" ],
 		base	: new Stat(19, 6, 1, 5, 3, 3, 7, 1),
-		growth	: new Stat(65, 35, -5, 15, 15, 5, 35, 0),
+		growth	: new Stat(85, 55, 15, 35, 35, 25, 55, 20),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -294,7 +294,7 @@ db.classes = {
 		name	: "Wyvern Lord",
 		tier	: "tier2",
 		base	: new Stat(25, 8, 2, 7, 5, 3, 10, 2),
-		growth	: new Stat(65, 35, -5, 15, 15, 5, 35, 0),
+		growth	: new Stat(85, 55, 15, 35, 35, 25, 55, 20),
 		maxStat	: new Stat(60, 28, 19, 27, 25, 30, 28, 19),
 	},
 	
@@ -303,7 +303,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Sage" ],
 		base	: new Stat(17, 2, 6, 4, 6, 3, 2, 5),
-		growth	: new Stat(40, 0, 45, 20, 30, 0, 0, 30),
+		growth	: new Stat(60, 20, 65, 40, 50, 20, 20, 50),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 30, 20, 20),
 	},
 	
@@ -311,7 +311,7 @@ db.classes = {
 		name	: "Sage",
 		tier	: "tier2",
 		base	: new Stat(20, 4, 8, 6, 9, 3, 4, 8),
-		growth	: new Stat(40, 0, 45, 20, 30, 0, 0, 30),
+		growth	: new Stat(60, 20, 65, 40, 50, 20, 20, 50),
 		maxStat	: new Stat(55, 21, 30, 26, 28, 35, 20, 27),
 	},
 	
@@ -320,7 +320,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Bishop" ],
 		base	: new Stat(16, 0, 8, 2, 4, 7, 0, 8),
-		growth	: new Stat(35, -5, 35, 10, 15, 40, -5, 40),
+		growth	: new Stat(55, 15, 55, 30, 35, 60, 15, 60),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 35, 20, 20),
 	},
 	
@@ -328,7 +328,7 @@ db.classes = {
 		name	: "Bishop",
 		tier	: "tier2",
 		base	: new Stat(20, 1, 11, 4, 6, 7, 1, 12),
-		growth	: new Stat(35, -5, 35, 10, 15, 40,-5, 40),
+		growth	: new Stat(55, 15, 55, 30, 35, 60, 15, 60),
 		maxStat	: new Stat(50, 20, 28, 25, 26, 40, 21, 30),
 	},
 	
@@ -337,7 +337,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Valkyrie" ],
 		base	: new Stat(15, 2, 7, 3, 2, 8, 2, 6),
-		growth	: new Stat(30, 15, 25, 20, 30, 25, -10, 30),
+		growth	: new Stat(50, 35, 45, 40, 50, 45, 10, 50),
 		maxStat	: new Stat(40, 20, 20, 20, 20, 35, 20, 20),
 	},
 	
@@ -345,7 +345,7 @@ db.classes = {
 		name	: "Valkyrie",
 		tier	: "tier2",
 		base	: new Stat(18, 6, 10, 4, 5, 8, 4, 7),
-		growth	: new Stat(30, 15, 25, 20, 30, 25, -10, 30),
+		growth	: new Stat(50, 35, 45, 40, 50, 45, 10, 50),
 		maxStat	: new Stat(50, 24, 27, 24, 26, 40, 23, 29),
 	},
 	
@@ -354,7 +354,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Assassin" ],
 		base	: new Stat(16, 5, 3, 4, 10, 3, 3, 1),
-		growth	: new Stat(40, 25, -5, 35, 40, 20, 10, 0),
+		growth	: new Stat(60, 45, 15, 55, 60, 40, 30, 20),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -362,7 +362,7 @@ db.classes = {
 		name	: "Assassin",
 		tier	: "tier2",
 		base	: new Stat(18, 7, 6, 8, 13, 3, 4, 3),
-		growth	: new Stat(40, 25, -5, 35, 40, 20, 10, 0),
+		growth	: new Stat(60, 45, 15, 55, 60, 40, 30, 20),
 		maxStat	: new Stat(60, 25, 23, 34, 34, 30, 22, 20),
 	},
 	
@@ -371,7 +371,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Berserker" ],
 		base	: new Stat(20, 9, 0, 2, 7, 3, 4, 0),
-		growth	: new Stat(80, 40, -10, 5, 30, 5, 20, -5),
+		growth	: new Stat(100, 60, 10, 25, 50, 25, 40, 15),
 		maxStat	: new Stat(45, 20, 20, 20, 20, 20, 20, 20),
 	},
 	
@@ -379,7 +379,7 @@ db.classes = {
 		name	: "Berserker",
 		tier	: "tier2",
 		base	: new Stat(27, 10, 2, 4, 10, 4, 5, 0),
-		growth	: new Stat(80, 40, -10, 5, 30, 5, 20, -5),
+		growth	: new Stat(100, 60, 10, 25, 50, 25, 40, 15),
 		maxStat	: new Stat(70, 30, 19, 23, 29, 30, 21, 19),
 	},
 
@@ -388,7 +388,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Cat2" ],
 		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
-		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
+		growth	: new Stat(55, 45, 35, 50, 70, 40, 20, 20),
 		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
 	},
 
@@ -396,7 +396,7 @@ db.classes = {
 		name	: "Cat Laguz",
 		tier	: "tier2",
 		base	: new Stat(18, 6, 4, 8, 10, 6, 5, 5),
-		growth	: new Stat(35, 25, 15, 30, 50, 20, 0, 0),
+		growth	: new Stat(55, 45, 35, 50, 70, 40, 20, 20),
 		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
 	},
 
@@ -404,7 +404,7 @@ db.classes = {
 		name	: "Cat New",
 		tier	: "tier1",
 		base	: new Stat(16, 4, 3, 4, 7, 6, 3, 2),
-		growth	: new Stat(75, 55, 35, 70, 110, 40, 5, 10),
+		growth	: new Stat(115, 95, 75, 110, 150, 80, 45, 50),
 		maxStat	: new Stat(65, 26, 22, 29, 30, 35, 22, 23),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -414,7 +414,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Tiger2" ],
 		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
-		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
+		growth	: new Stat(90, 60, 15, 25, 35, 30, 45, 25),
 		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
 	},
 
@@ -422,7 +422,7 @@ db.classes = {
 		name	: "Tiger Laguz",
 		tier	: "tier2",
 		base	: new Stat(22, 10, 4, 6, 7, 3, 7, 3),
-		growth	: new Stat(70, 40, -5, 5, 15, 10, 25, 5),
+		growth	: new Stat(90, 60, 15, 25, 35, 30, 45, 25),
 		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
 	},
 
@@ -430,7 +430,7 @@ db.classes = {
 		name	: "Tiger New",
 		tier	: "tier1",
 		base	: new Stat(19, 8, 2, 4, 4, 3, 4, 1),
-		growth	: new Stat(150, 85, 5, 15, 40, 20, 60, 15),
+		growth	: new Stat(190, 125, 45, 55, 80, 60, 100, 55),
 		maxStat	: new Stat(70, 29, 21, 23, 25, 30, 25, 21),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -440,7 +440,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Lion2" ],
 		base	: new Stat(20, 8, 1, 6, 2, 3, 5, 0),
-		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
+		growth	: new Stat(105, 60, 10, 30, 20, 25, 60, 15),
 		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
 	},
 
@@ -448,7 +448,7 @@ db.classes = {
 		name	: "Lion Laguz",
 		tier	: "tier2",
 		base	: new Stat(24, 11, 1, 8, 5, 3, 7, 3),
-		growth	: new Stat(85, 40, -10, 10, 0, 5, 40, -5),
+		growth	: new Stat(105, 60, 10, 30, 20, 25, 60, 15),
 		maxStat	: new Stat(74, 30, 19, 28, 21, 30, 29, 19),
 	},
 	
@@ -456,7 +456,7 @@ db.classes = {
 		name	: "Lion New",
 		tier	: "tier1",
 		base	: new Stat(20, 8, 1, 6, 2, 3, 5, 0),
-		growth	: new Stat(180, 90, -5, 25, 10, 10, 90, 5),
+		growth	: new Stat(220, 130, 35, 65, 50, 50, 130, 45),
 		maxStat	: new Stat(75, 30, 19, 28, 21, 30, 29, 19),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -466,7 +466,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Hawk2" ],
 		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
-		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
+		growth	: new Stat(80, 40, 30, 45, 40, 25, 35, 30),
 		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
 	},
 
@@ -474,7 +474,7 @@ db.classes = {
 		name	: "Hawk Laguz",
 		tier	: "tier2",
 		base	: new Stat(19, 9, 5, 9, 7, 3, 6, 4),
-		growth	: new Stat(60, 20, 10, 25, 20, 5, 15, 10),
+		growth	: new Stat(80, 40, 30, 45, 40, 25, 35, 30),
 		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
 	},
 	
@@ -482,7 +482,7 @@ db.classes = {
 		name	: "Hawk New",
 		tier	: "tier1",
 		base	: new Stat(16, 6, 3, 7, 5, 3, 4, 1),
-		growth	: new Stat(130, 50, 25, 55, 45, 10, 35, 30),
+		growth	: new Stat(170, 90, 65, 95, 85, 50, 75, 70),
 		maxStat	: new Stat(65, 25, 23, 30, 28, 30, 25, 22),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -492,7 +492,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Raven2" ],
 		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
-		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
+		growth	: new Stat(65, 40, 35, 55, 50, 15, 30, 45),
 		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
 	},
 
@@ -500,7 +500,7 @@ db.classes = {
 		name	: "Raven Laguz",
 		tier	: "tier2",
 		base	: new Stat(16, 7, 8, 9, 11, 0, 5, 6),
-		growth	: new Stat(45, 20, 15, 25, 30, -5, 10, 25),
+		growth	: new Stat(65, 40, 35, 55, 50, 15, 30, 45),
 		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
 	},
 			
@@ -508,7 +508,7 @@ db.classes = {
 		name	: "Raven New",
 		tier	: "tier1",
 		base	: new Stat(14, 4, 4, 7, 8, 0, 4, 4),
-		growth	: new Stat(95, 50, 40, 55, 70, 0, 25, 55),
+		growth	: new Stat(135, 90, 80, 95, 110, 40, 65, 95),
 		maxStat	: new Stat(60, 24, 24, 27, 32, 35, 22, 26),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -518,7 +518,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "RedDrake2" ],
 		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
-		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
+		growth	: new Stat(115, 55, 5, 25, 10, 25, 75, 15),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
 
@@ -526,7 +526,7 @@ db.classes = {
 		name	: "Red Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(28, 12, 2, 5, 4, 1, 8, 2),
-		growth	: new Stat(95, 35, -15, 5, -10, 5, 55, -5),
+		growth	: new Stat(115, 55, 5, 25, 10, 25, 75, 15),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 	},
 	
@@ -534,7 +534,7 @@ db.classes = {
 		name	: "Red Dragon New",
 		tier	: "tier1",
 		base	: new Stat(22, 8, 2, 3, 2, 1, 6, 1),
-		growth	: new Stat(195, 85, -5, 15, 0, 10, 115, 0),
+		growth	: new Stat(235, 125, 35, 55, 4, 50, 155, 40),
 		maxStat	: new Stat(80, 29, 15, 24, 23, 30, 30, 15),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -544,7 +544,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "WhiteDrake2" ],
 		base	: new Stat(16, 2, 5, 3, 5, 5, 2, 7),
-		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
+		growth	: new Stat(85, 5, 60, 40, 65, 30, 20, 40),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 	},
 
@@ -552,7 +552,7 @@ db.classes = {
 		name	: "White Dragon Laguz",
 		tier	: "tier2",
 		base	: new Stat(19, 3, 8, 7, 7, 5, 4, 9),
-		growth	: new Stat(65, -15, 40, 20, 25, 10, 0, 20),
+		growth	: new Stat(85, 5, 60, 40, 65, 30, 20, 40),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 	},
 	
@@ -560,7 +560,7 @@ db.classes = {
 		name	: "White Dragon New",
 		tier	: "tier1",
 		base	: new Stat(16, 2, 5, 3, 5, 5, 2, 7),
-		growth	: new Stat(140, 0, 90, 50, 60, 20, 5, 45),
+		growth	: new Stat(180, 40, 130, 90, 100, 60, 45, 85),
 		maxStat	: new Stat(70, 22, 30, 26, 26, 35, 22, 28),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},
@@ -570,7 +570,7 @@ db.classes = {
 		tier	: "tier1",
 		promoteTo : [ "Heron2" ],
 		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
-		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
+		growth	: new Stat(50, 5, 60, 15, 55, 50, 10, 80),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
 	},
 
@@ -578,7 +578,7 @@ db.classes = {
 		name	: "Heron Laguz",
 		tier	: "tier2",
 		base	: new Stat(16, 1, 11, 3, 11, 6, 2, 12),
-		growth	: new Stat(30, -15, 40, -5, 35, 30, -10, 60),
+		growth	: new Stat(50, 5, 60, 15, 55, 50, 10, 80),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
 	},
 		
@@ -586,7 +586,7 @@ db.classes = {
 		name	: "Heron New",
 		tier	: "tier1",
 		base	: new Stat(14, 0, 7, 2, 7, 6, 1, 8),
-		growth	: new Stat(65, 0, 90, 5, 80, 60, 0, 130),
+		growth	: new Stat(105, 40, 130, 45, 120, 100, 40, 170),
 		maxStat	: new Stat(55, 15, 32, 25, 30, 40, 16, 40),
 		doubleModifier : true  // Flag to indicate double modifiers from boons and banes
 	},

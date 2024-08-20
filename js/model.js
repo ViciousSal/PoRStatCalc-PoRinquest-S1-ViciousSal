@@ -141,7 +141,7 @@ db.classes = {
 		name	: "Lord",
 		tier	: "tier2",
 		base	: new Stat(22, 7, 5, 6, 7, 4, 8, 3),
-		growth	: new Stat(90, 35, 15, 35, 55, 55, 25, 15),
+		growth	: new Stat(90, 45, 15, 35, 45, 55, 25, 15),
 		maxStat	: new Stat(60, 26, 20, 27, 28, 30, 24, 22),
 	},
 	
